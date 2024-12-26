@@ -13,7 +13,7 @@ import ProfilePage from "./pages/ProfilePage";
 import { Loader } from "lucide-react";
 
 const App = () => {
-  const { authUser, checkAuth } = useAuthStore();
+  const { authUser, checkAuth, isCheckingAuth } = useAuthStore();
 
   useEffect(() => {
     checkAuth();
